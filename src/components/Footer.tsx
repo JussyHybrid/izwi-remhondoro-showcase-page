@@ -30,48 +30,57 @@ const Footer = () => {
             </h4>
             <a 
               href="mailto:izwi@izwiremhondoro.co.zw" 
-              className="text-amber-200 hover:text-white transition-colors block mb-4"
+              className="text-amber-200 hover:text-white transition-colors block mb-6"
             >
               izwi@izwiremhondoro.co.zw
             </a>
             
-            {/* Social Media Links */}
-            <div className="flex justify-center md:justify-end gap-4 mb-4">
+            {/* Social Media Links with Names */}
+            <div className="grid grid-cols-2 gap-4 mb-4">
               <a 
                 href="https://youtube.com/@izwiremhondoro" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-amber-200 hover:text-white transition-colors p-2 bg-white/10 rounded-full hover:bg-white/20"
-                title="YouTube"
+                className="text-amber-200 hover:text-white transition-colors flex flex-col items-center p-3 bg-white/10 rounded-lg hover:bg-white/20"
               >
-                <Youtube className="w-5 h-5" />
+                <Youtube className="w-6 h-6 mb-1" />
+                <span className="text-xs">YouTube</span>
               </a>
+              
               <a 
                 href="https://music.apple.com/artist/izwi-remhondoro" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-amber-200 hover:text-white transition-colors p-2 bg-white/10 rounded-full hover:bg-white/20"
-                title="Apple Music"
+                className="text-amber-200 hover:text-white transition-colors flex flex-col items-center p-3 bg-white/10 rounded-lg hover:bg-white/20"
               >
-                <Music className="w-5 h-5" />
+                <div className="w-6 h-6 mb-1 bg-current rounded-sm flex items-center justify-center">
+                  <Music className="w-4 h-4" />
+                </div>
+                <span className="text-xs">Apple Music</span>
               </a>
+              
               <a 
                 href="https://open.spotify.com/artist/izwiremhondoro" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-amber-200 hover:text-white transition-colors p-2 bg-white/10 rounded-full hover:bg-white/20"
-                title="Spotify"
+                className="text-amber-200 hover:text-white transition-colors flex flex-col items-center p-3 bg-white/10 rounded-lg hover:bg-white/20"
               >
-                <div className="w-5 h-5 bg-current rounded-full"></div>
+                <div className="w-6 h-6 mb-1 bg-current rounded-full relative">
+                  <div className="absolute inset-0 bg-amber-900 rounded-full"></div>
+                  <div className="absolute inset-1 bg-current rounded-full"></div>
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1 h-1 bg-amber-900 rounded-full"></div>
+                </div>
+                <span className="text-xs">Spotify</span>
               </a>
+              
               <a 
                 href="https://wa.me/263771234567" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-amber-200 hover:text-white transition-colors p-2 bg-white/10 rounded-full hover:bg-white/20"
-                title="WhatsApp"
+                className="text-amber-200 hover:text-white transition-colors flex flex-col items-center p-3 bg-white/10 rounded-lg hover:bg-white/20"
               >
-                <MessageCircle className="w-5 h-5" />
+                <MessageCircle className="w-6 h-6 mb-1" />
+                <span className="text-xs">WhatsApp</span>
               </a>
             </div>
             

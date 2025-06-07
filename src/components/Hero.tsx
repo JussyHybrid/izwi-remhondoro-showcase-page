@@ -12,47 +12,18 @@ const Hero = () => {
         <div className="absolute bottom-20 left-20 w-40 h-40 border-4 border-orange-600 rounded-full transform rotate-45"></div>
         <div className="absolute bottom-32 right-10 w-28 h-28 border-4 border-amber-700 rounded-full transform -rotate-45"></div>
       </div>
-
-      {/* Cultural Watermarks - Lion and Fish Eagle */}
-      <div className="absolute inset-0 pointer-events-none">
-        {/* Lion watermark - representing Mhondoro */}
-        <div className="absolute top-1/4 left-8 opacity-5 transform rotate-12">
-          <img 
-            src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=400&h=400&fit=crop&crop=face"
-            alt="Lion - Mhondoro"
-            className="w-64 h-64 object-cover rounded-full grayscale"
-          />
-        </div>
-        
-        {/* Fish Eagle watermark - Hungwe */}
-        <div className="absolute bottom-1/4 right-8 opacity-5 transform -rotate-12">
-          <img 
-            src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=400&h=400&fit=crop&crop=center"
-            alt="Fish Eagle - Hungwe"
-            className="w-56 h-56 object-cover rounded-full grayscale"
-          />
-        </div>
-
-        {/* Additional smaller cultural motifs */}
-        <div className="absolute top-2/3 left-1/4 opacity-3 transform rotate-45">
-          <img 
-            src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=200&h=200&fit=crop&crop=face"
-            alt="Lion motif"
-            className="w-32 h-32 object-cover rounded-full grayscale"
-          />
-        </div>
-      </div>
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="animate-fade-in">
-          {/* Logo Section */}
+          {/* Custom Logo Section */}
           <div className="mb-8">
-            <div className="w-32 h-32 mx-auto mb-6 bg-white rounded-full shadow-lg flex items-center justify-center">
-              <div className="w-24 h-24 bg-gradient-to-br from-amber-600 to-red-600 rounded-full flex items-center justify-center">
-                <Music className="w-12 h-12 text-white" />
-              </div>
+            <div className="w-48 h-48 mx-auto mb-6 rounded-full shadow-lg overflow-hidden bg-white p-2">
+              <img 
+                src="/lovable-uploads/aaa6d0c0-18b8-448b-a808-82abbc71d6b9.png"
+                alt="Izwi ReMhondoro Logo"
+                className="w-full h-full object-cover rounded-full"
+              />
             </div>
-            <p className="text-sm text-amber-700 mb-2">Upload your custom logo in the file manager</p>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold text-amber-900 mb-6 leading-tight">

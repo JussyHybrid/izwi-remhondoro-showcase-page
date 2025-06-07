@@ -1,6 +1,5 @@
 
-import { Mail, MapPin, Phone, Clock } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Mail, MapPin, Clock } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -14,8 +13,8 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          <div className="space-y-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-2xl shadow-lg">
               <h3 className="text-2xl font-bold text-amber-900 mb-6">Contact Information</h3>
               
@@ -72,51 +71,6 @@ const Contact = () => {
                 </li>
               </ul>
             </div>
-          </div>
-          
-          <div className="bg-gradient-to-br from-amber-900 to-red-900 p-8 rounded-2xl shadow-lg text-white">
-            <h3 className="text-2xl font-bold mb-6">Send Us a Message</h3>
-            <form className="space-y-6">
-              <div>
-                <label className="block text-sm font-medium mb-2">Name</label>
-                <input 
-                  type="text" 
-                  className="w-full p-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-amber-400"
-                  placeholder="Your name"
-                />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium mb-2">Email</label>
-                <input 
-                  type="email" 
-                  className="w-full p-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-amber-400"
-                  placeholder="your@email.com"
-                />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium mb-2">Subject</label>
-                <input 
-                  type="text" 
-                  className="w-full p-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-amber-400"
-                  placeholder="What would you like to discuss?"
-                />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium mb-2">Message</label>
-                <textarea 
-                  rows={4} 
-                  className="w-full p-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-amber-400 resize-none"
-                  placeholder="Tell us about your event or inquiry..."
-                ></textarea>
-              </div>
-              
-              <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 text-lg rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
-                Send Message
-              </Button>
-            </form>
           </div>
         </div>
       </div>
