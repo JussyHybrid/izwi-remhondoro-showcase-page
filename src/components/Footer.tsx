@@ -1,5 +1,5 @@
 
-import { Music, Heart, Mail } from "lucide-react";
+import { Music, Heart, Mail, Youtube, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -30,10 +30,51 @@ const Footer = () => {
             </h4>
             <a 
               href="mailto:izwi@izwiremhondoro.co.zw" 
-              className="text-amber-200 hover:text-white transition-colors block"
+              className="text-amber-200 hover:text-white transition-colors block mb-4"
             >
               izwi@izwiremhondoro.co.zw
             </a>
+            
+            {/* Social Media Links */}
+            <div className="flex justify-center md:justify-end gap-4 mb-4">
+              <a 
+                href="https://youtube.com/@izwiremhondoro" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-amber-200 hover:text-white transition-colors p-2 bg-white/10 rounded-full hover:bg-white/20"
+                title="YouTube"
+              >
+                <Youtube className="w-5 h-5" />
+              </a>
+              <a 
+                href="https://music.apple.com/artist/izwi-remhondoro" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-amber-200 hover:text-white transition-colors p-2 bg-white/10 rounded-full hover:bg-white/20"
+                title="Apple Music"
+              >
+                <Music className="w-5 h-5" />
+              </a>
+              <a 
+                href="https://open.spotify.com/artist/izwiremhondoro" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-amber-200 hover:text-white transition-colors p-2 bg-white/10 rounded-full hover:bg-white/20"
+                title="Spotify"
+              >
+                <div className="w-5 h-5 bg-current rounded-full"></div>
+              </a>
+              <a 
+                href="https://wa.me/263771234567" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-amber-200 hover:text-white transition-colors p-2 bg-white/10 rounded-full hover:bg-white/20"
+                title="WhatsApp"
+              >
+                <MessageCircle className="w-5 h-5" />
+              </a>
+            </div>
+            
             <p className="text-amber-100 mt-2">Zimbabwe</p>
           </div>
         </div>

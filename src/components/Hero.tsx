@@ -1,5 +1,5 @@
 
-import { Music, Heart, Users } from "lucide-react";
+import { Music, Heart, Users, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -15,6 +15,16 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="animate-fade-in">
+          {/* Logo Section */}
+          <div className="mb-8">
+            <div className="w-32 h-32 mx-auto mb-6 bg-white rounded-full shadow-lg flex items-center justify-center">
+              <div className="w-24 h-24 bg-gradient-to-br from-amber-600 to-red-600 rounded-full flex items-center justify-center">
+                <Music className="w-12 h-12 text-white" />
+              </div>
+            </div>
+            <p className="text-sm text-amber-700 mb-2">Upload your custom logo in the file manager</p>
+          </div>
+
           <h1 className="text-5xl md:text-7xl font-bold text-amber-900 mb-6 leading-tight">
             Izwi ReMhondoro
           </h1>
