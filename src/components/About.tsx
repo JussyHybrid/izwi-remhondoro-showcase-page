@@ -55,6 +55,15 @@ const About = () => {
                 <div className="w-3 h-3 bg-amber-700 rounded-full mr-4"></div>
                 <span className="text-amber-900 font-medium">Cultural Organizations</span>
               </div>
+              <a 
+                href="https://strateji.io/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div className="w-3 h-3 bg-blue-600 rounded-full mr-4"></div>
+                <span className="text-amber-900 font-medium hover:text-blue-700 transition-colors">Strateji</span>
+              </a>
             </div>
           </div>
         </div>
